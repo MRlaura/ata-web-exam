@@ -6,7 +6,7 @@
     <title>Exam</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <!--  <script src="main.js"></script> -->
+     <script src="main.js"></script> 
     <style>
      .btt {
       border: none;
@@ -19,7 +19,8 @@
          background-color: #cccccc;
          background-size: cover;
          }
-  
+
+
     marquee {
         font-family: Verdana;
         font-size: 1.5em;
@@ -37,7 +38,7 @@
 
     </style>
    
-
+ 
 </head>
 <body class="container" >
         <div class="header clearfix">
@@ -80,10 +81,14 @@
                  
         </audio>
         <br>
-        &nbsp; <button class="btt"> <img src="like.png" alt="like_icon" width="40px"> </button>
-            &nbsp;
-            <button class="btt"> <img src="love.png" alt="like_icon" width="40px">  </button>
-     <br>   <br>
+        &nbsp; <button class="btt" id="lik" onClick="lik()"> <img src="like.png" alt="like_icon" width="40px"> </button>
+        &nbsp;
+        <span id=countLik> 
+            <!-- show the number of likes-->
+        </span>
+        <button class="btt" id="lov" onClick="lov()" > <img src="love.png" alt="like_icon" width="40px">  </button>
+        <span id=countLov> </span>
+ <br>   <br>
     </div> 
     <br>  
     <marquee> The best music</marquee>
@@ -112,9 +117,13 @@
                      
             </audio>
             <br>
-            &nbsp; <button class="btt"> <img src="like.png" alt="like_icon" width="40px"> </button>
+            &nbsp; <button class="btt" id="like" onClick="like()"> <img src="like.png" alt="like_icon" width="40px"> </button>
                 &nbsp;
-                <button class="btt"> <img src="love.png" alt="like_icon" width="40px">  </button>
+                <span id=countLike> 
+                    <!-- show the number of likes-->
+                </span>
+                <button class="btt" id="love" onClick="love()" > <img src="love.png" alt="like_icon" width="40px">  </button>
+                <span id=countLove> </span>
          <br>   <br>
         </div> 
     
